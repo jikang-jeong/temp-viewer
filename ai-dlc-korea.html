@@ -221,6 +221,16 @@
             text-decoration: underline;
         }
 
+        .diagram-image {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 30px auto;
+            border: 2px solid #dee2e6;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
         @media (max-width: 768px) {
             header h1 {
                 font-size: 1.8em;
@@ -458,6 +468,8 @@
                     이 섹션은 AI-DLC의 핵심 프레임워크를 설명하며, 단계, 역할, 워크플로 및 주요 산출물을 상세히 다룹니다.
                 </p>
 
+                <img src="ai_dlc.png" alt="AI-DLC 핵심 프레임워크" class="diagram-image">
+
                 <h3>1. 산출물 (Artifacts)</h3>
 
                 <div class="artifact-card">
@@ -664,6 +676,9 @@
                 </div>
 
                 <h3>3. 워크플로</h3>
+
+                <img src="workflow.png" alt="AI-DLC 워크플로" class="diagram-image">
+
                 <div class="workflow-diagram">
                     <h4>📊 AI-DLC 워크플로</h4>
                     <p>
@@ -727,6 +742,11 @@
                     <li><strong>논리 설계:</strong> AI가 도메인 모델을 논리 설계로 변환하여 NFR 적용 (예: 확장성, 장애 허용)</li>
                     <li><strong>아키텍처 결정:</strong> 개발자가 AI의 권장 사항을 평가하고 트레이드오프를 승인하며 필요한 경우 추가 고려 사항 제안</li>
                     <li><strong>코드 생성:</strong> AI가 각 유닛에 대해 실행 가능한 코드를 생성하고 논리 구성 요소를 특정 AWS 서비스에 매핑</li>
+                </ol>
+
+                <img src="ai-domain-specific_ai_agent.png" alt="도메인 특화 AI 에이전트" class="diagram-image">
+
+                <ol start="7">
                     <li><strong>테스트 생성:</strong> AI가 기능, 보안 및 성능 테스트를 자동 생성</li>
                     <li><strong>코드 검토:</strong> 개발자가 생성된 코드와 테스트 시나리오/케이스를 검토하고 품질과 규정 준수를 보장하기 위해 필요한 조정 수행</li>
                 </ol>
